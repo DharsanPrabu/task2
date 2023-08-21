@@ -49,9 +49,9 @@ function Components(props){
             </div>
             <hr/>
             <div className='flex'>
-                <div className=" h-screen p-4 border-r" style={{width: "350px"}}>
+                <div className="h-screen p-12 border-r" style={{width: "350px"}}>
                     <ul>
-                        <li className="hover:bg-gray-200 rounded-md font-family: ui-sans-serif, system-ui flex mb-4 cursor-pointer font-medium text-base bg-text-gray-400 hover:text-black px-5 hover:bg-gray">
+                        <li className="hover:bg-gray-200 rounded-md text-gray-400 font-family: ui-sans-serif, system-ui flex mb-4 cursor-pointer font-medium text-base bg-text-gray-400 hover:text-black px-5 hover:bg-gray">
                             <AiOutlineHome className='mt-1 mr-2' />
                             <p className=''>Home</p> 
                         </li>
@@ -68,17 +68,16 @@ function Components(props){
                             Configure</li>
                         <li className="flex mb-4 cursor-pointer font-medium text-gray-400 hover:text-black  px-5" onClick={() => {setShowButton(!showButton)}}>
                           <MdVerifiedUser className='mt-1 mr-2'/>
-                           <p>User&authentication</p><RiArrowDropDownLine/>
+                           <p>User&authentication</p><RiArrowDropDownLine className='mt-1 text-xl' />
                         </li>
                         {showButton === true ? 
                             <div className="  mb-4 cursor-pointer font-medium  text-gray-400 hover:text-black px-5">
-                                <p className=" text-xs flex mb-4 cursor-pointer text-gray-400 hover:text-black px-5"onClick={() => navigate("/authentication")}>Email,Phone,User Name</p>
-                                <p className=" text-xs  flex mb-4 cursor-pointer font-medium text-gray-400 hover:text-black px-5">Social connections  </p>
-                                    <p className=" text-xs flex mb-4 cursor-pointer font-medium text-gray-400 hover:text-black px-5">Web3</p>
-                                    <p className=" text-xs  flex mb-4 cursor-pointer font-medium text-gray-400 hover:text-black px-5">Enterprices connections</p>
-                                    <p className=" text-xs  flex mb-4 cursor-pointer font-medium text-gray-400 hover:text-black px-5">Multi factor </p>
-                                    <p className=" text-xs  flex mb-4 cursor-pointer font-medium text-gray-400 hover:text-black px-5">Restrictions</p>
-                                    
+                                <p className=" text-xs flex mb-4 cursor-pointer text-gray-400 hover:text-black px-5"onClick={() => navigate("/authentication")}>Email, Phone, User Name</p>
+                                <p className=" text-xs  flex mb-4 cursor-pointer font-medium text-gray-400 hover:text-black px-5">Social connections</p>
+                                <p className=" text-xs flex mb-4 cursor-pointer font-medium text-gray-400 hover:text-black px-5">Web3</p>
+                                <p className=" text-xs  flex mb-4 cursor-pointer font-medium text-gray-400 hover:text-black px-5">Enterprices connections</p>
+                                <p className=" text-xs  flex mb-4 cursor-pointer font-medium text-gray-400 hover:text-black px-5">Multi factor </p>
+                                <p className=" text-xs  flex mb-4 cursor-pointer font-medium text-gray-400 hover:text-black px-5">Restrictions</p>
                             </div>
                         :
                             null
